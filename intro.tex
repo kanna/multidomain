@@ -45,24 +45,25 @@ now be addressed.
 
 Over the last decade a range of efforts primarily at universities in
 the US, Europe and Australia have led to the development of low-cost
-marine robotic platforms \cite{sousa2012lauv,pinto2013lsts}. These have benefited from
-incremental developments in autonomous low-level control \cite{} as
-well as in hardware subsystems and payloads related to measuring some
-of the essential variables noted above. Key variables in the ocean are
-often not directly measurable; however sensing technology exists which
-can be a proxy. Coupled with smaller form factor and optimized energy
-use and leveraging battery technologies, these platforms have had
-extended use in the aerial, surface and underwater domains. For
-instance, one popular low-cost autonomous underwater vehicle (AUVs)
-now has the capability to be on station for 5 days \cite{}. Small
-unmanned aerial vehicles (UAVs) have had increased use in the battle
-space on land; however those same technologies have proven to be
-equally useful over the water, both as fixed wing as well as rotary
-platforms. Autonomous surface vehicles (ASVs) however have made the
-biggest strides despite being in the harsh surface environment, in
-part because they have been able to capitalize on renewable sources of
-energy (wind, waves and solar) to become persistent long-range assets
-for dual use capabilities \cite{}.
+marine robotic platforms. These have benefited from incremental
+developments in autonomous low-level control \cite{} as well as in
+hardware subsystems and payloads related to measuring some of the
+essential variables. Key variables in the ocean are often not directly
+measurable; however sensing technology exists which can be a
+proxy. Coupled with smaller form factor and optimized energy use and
+leveraging battery technologies, these platforms have had extended use
+in the aerial, surface and underwater domains. For instance, one
+popular low-cost autonomous underwater vehicle (AUVs) now has the
+capability to be on station for 5 days
+\cite{sousa2012lauv,pinto2013lsts}. Small unmanned aerial vehicles
+(UAVs) have had increased use in the battle space on land; however
+those same technologies have proven to be equally useful over the
+water, both as fixed wing as well as rotary platforms. Autonomous
+surface vehicles (ASVs) however have made the biggest strides despite
+being in the harsh surface environment, in part because they have been
+able to capitalize on renewable sources of energy (wind, waves and
+solar) to become persistent long-range assets for dual use
+capabilities \cite{}.
 
 \begin{figure}[!t]
   \centering
@@ -93,29 +94,40 @@ buoys, drifters and even robots in-situ (Fig. \ref{fig:concept}) have
 provided fine-scale data to ground models. As a result, it is
 increasingly critical to use in-situ data and fast prediction
 capability to test divergence between prediction and the ground
-truth. Equally newer statistical methods \cite{} within the modeling
-framework are able to generate measures of coherance and uncertainty,
-which can be quantified to direct more (or less) in-situ data
-collection to \emph{reduce} such divergence between prediction and the
-ground-truth.
+truth. Equally newer statistical methods \cite{lermusiaux06} within
+the modeling framework are able to generate measures of coherance and
+uncertainty, which can be quantified to direct more (or less) in-situ
+data collection to \emph{reduce} such divergence between prediction
+and the ground-truth.
 
 Finally, the advent of Small Satellite platforms initially built by
 students for single purpose uses, have prolifirated with significant
 advances in payloads, control and propulsion leading to their adoption
 commercially for a range of earth observing capabilities including for
-ocean observation \cite{}. While individual satellites with low-cost
-sensors can be assembled inexpensively (in the 100's of thousands of
-dollars), the bottleneck of launch costs (in the millions) are only
-now rapidly coming down with a number of US domestic as well as
-international providing launch services with a range of orbital
-orientations. This is driven in part because of standardization allows
-launch providers to package large number of \smle's (the largest to
-date has been 120) to lower unit costs, that envisioning a private
-orbital constellation is now well within reality. Some critical
-advantages of \smle's are that they can be assembled quickly with the
-latest in optical or radar payloads, integrated by small teams even
-within university environments, and with lowered costs, can enable
-rapid revisit times with an orbital ``train'' of space-based sensors. 
+ocean observation \cite{guerra16}. While individual satellites with
+low-cost sensors can be assembled inexpensively (in the 100's of
+thousands of dollars), the bottleneck of launch costs (in the
+millions) are only now rapidly coming down with a number of US
+domestic as well as international providing launch services with a
+range of orbital orientations. This is driven in part because of
+standardization allows launch providers to package large number of
+\smle's (the largest to date has been 120) to lower unit costs, that
+envisioning a private orbital constellation is now well within
+reality. Some critical advantages of \smle's are that they can be
+assembled quickly with the latest in optical or radar payloads,
+integrated by small teams even within university environments, and
+with lowered costs, can enable rapid revisit times with an orbital
+``train'' of space-based sensors.
+
+\begin{figure}[!]
+  \centering
+  \includegraphics[width=1\textwidth]{fig/Meteor-Fig-3.jpg}
+  \caption{An 'inverse pyramid' concept of observational tools using a
+    mix of space, aerial, surface and underwater robots, observing a
+    patch of the ocean.}
+  \label{fig:concept-2}
+\end{figure}
+
 
 Combining these elements together by integrating agile low‐cost \sml
 platforms, coupled with aerial, surface and underwater mobile and
@@ -126,7 +138,8 @@ technologies only a few years in the making (as against decades for
 legacy agency based satellites), dynamic oceanographic events of
 importance for civil and military needs can then be tracked. Equally,
 and critically, with models run in the cloud, the entire ensemble is
-portable and can be targeted to run in any coastal environment.
+portable and can be targeted to run in any coastal environment
+(Fig. \ref{fig:concept-2}).
 
 To enable this vision, however, we need to understand the principles
 behind which such an observing system can be deployed and
