@@ -15,27 +15,92 @@ unrealistic in both human and financial costs. Satellite remote
 sensing using a train of spacecraft is a possibility, even if image
 resolution is often distorted by atmospheric effects, and the lack of
 pentration of active optical or radar based measurements beyond a
-meter of the upper water column. 
+meter of the upper water column.
+
+For the most part, scientists use research vessels to make discrete
+water sample measurements by repeatedly stopping the vessel and lowering
+instruments for measurements and sample collection. These measurements
+are pulled together to discern what are continuous processes in space
+and time. Underway measurements including those towed behind the
+research vessel such as toyo's (CITE) provide continuous measurements
+but are constrained by the vessel's movement and have no independant
+means to adapt to variability in the water-column. Eulerian and
+Lagrangian approaches to observations such as buoys and \texttt{ARGO}
+floats \cite{roemmich09} can make accurate high-resolution assessments
+over space and time, but are constrained by what water mass passes by or
+the impact of currents on the device.
+
+Even if such approaches provide us a window into the workings of dynamic
+processes, they are constrained in neglecting higher orders of
+variability. As our knowledge of ocean processes has progressed, we have
+learned that the more we observe, the more important the small scale
+features are to understanding ocean dynamics. Equally that they don't
+linearly scale up to add to the large patterns we have used to describe
+the inner workings of our oceans, as in the past. 
+
+Recent developments in mobile marine robots, sensing and Artificial
+Intelligence (AI) have been slowly making an impact and dealing with
+scales (micro to macro) of observation and space-time aliasing (cite) to
+provide measurements at higher spectral, temporal and spatial
+scales. Not only do such vehicles make continuous measurements, but
+their onboard computational capabilities allow for embedded
+decision-making to make observations at the `right place and time'. Yet
+robots in singleton traversing the water-column still face the challenge
+of dealing with the reality of the large scale of the ocean, starting
+with meso-scale ($\sim 50$ Km$^2$) observations. This has led to the
+belief that networked systems, including the Internet-of-Things (IoT),
+could provide a wider and deeper view into our oceans. So in theory
+while tens of hundreds of inexpensive robots can and have been proposed,
+the practical notion of deploying more than a few devices at a time, to
+survive the harsh confines of the ocean while returning needed
+observational data has proven to be impractical.  Costs associated with
+hardware might appear to be the primary bottleneck; however the primary
+issue relates to the placement, data fusion, coordination and control of
+multiple devices and therefore a constraint driven by software. Amongst
+these challenges, the inter-networking of devices communicating
+seamlessly and cost-effectively provides the fundamental 'glue' while
+providing situational awareness aiding observational coordination and
+logistical coordination (e.g. for launch and recovery).
+
+Reliable communications becomes more relevant in remote operations due
+to the inherent difficulty in physically accessing system state since
+these operations feature opportunist and sporadic connection windows.
+Networked infrastructure on vehicles is an important way forward to
+alleviating this challenge in coordination which in turn could drive
+the entire software stack onboard and on-shore and to form the basis
+for sensing, data collection and assimilation at scale. 
+
+Networking infrastructure in of itself in the maritime environment has
+typically related to providing internet services for vessels or oil and
+gas platforms \cite{jiang19,yau19,yau20} and less so with scientific
+exploration. While satellite communications (SatComms) have focused on
+such services out at sea, they have been expensive to use over sustained
+periods of time for scientific exploration.  Networked infrastructure
+can vastly aid in ocean exploration, permit a view of the ocean across
+synoptic scales and with multi-domain platforms in the air, on the
+surface and underwater, make a case for coordinated observations of the
+worlds oceans, and how such exploration will likely impact the future of
+ocean science. 
 
 Unmanned platforms, such as UAVs, ASVs, and AUVs are a viable
 alternative which cost-permitting can be deployed across a large area
 simultaneously while making measurements across space and time. For
-oceanographic measurements, the meso-scale ($\sim 50$ Km$^2$) is
-considered a viable spatial region of study and could also be
-considered a starting point for observing and monitoring a region for
-security. For instance, frontal zones, where two disparate bodies of
-water come together to form a surface expression, are important
-biological phenomenon of study. Typically, they can occur at a range
-of spatial scales, from several hundred meters up to many thousand
-kilometers \cite{belkin2007fronts} and are a feature which can
-catalyze the generation of mesoscale ($\sim 100$ Km) meanders,
-‘eddies’ and rings, and sub-mesoscale ($\sim 10$ Km) 'filaments' other
-smaller structures all of which have substantial impact on ocean
-variability and bio-geochemistry. Exploration of such dynamic features
-with a single platform will unlikely provide an understanding of its
-variability over space and time, while multiple robotic platforms, can
-provide not only measurements spread spatially, but an understanding
-of their temporal variability \cite{pinto20,pinto22}.
+oceanographic measurements, the meso-scale is considered a viable
+spatial region of study and could also be considered a starting point
+for observing and monitoring a region for security. For instance,
+frontal zones, where two disparate bodies of water come together to form
+a surface expression, are important biological phenomenon of
+study. Typically, they can occur at a range of spatial scales, from
+several hundred meters up to many thousand kilometers
+\cite{belkin2007fronts} and are a feature which can catalyze the
+generation of mesoscale ($\sim 100$ Km) meanders, ‘eddies’ and rings,
+and sub-mesoscale ($\sim 10$ Km) 'filaments' other smaller structures
+all of which have substantial impact on ocean variability and
+bio-geochemistry. Exploration of such dynamic features with a single
+platform will unlikely provide an understanding of its variability over
+space and time, while multiple robotic platforms, can provide not only
+measurements spread spatially, but an understanding of their temporal
+variability \cite{pinto20,pinto22}.
 
 Spatial resolution of data is another principal challenge in ocean
 observation. Typically, measurements made using manned vessels involving
@@ -63,3 +128,4 @@ movement through the water column, combined with a ballasting process
 with a buoyancy engine to change their potential energy, resulting in
 months-long missions collecting data in a saw-tooth (or a 'Yo-Yo')
 pattern.
+
